@@ -31,19 +31,8 @@
     }
   }
 
-  //   .main-area-rightside-container {
-  //     width: 100%;
+  // LEFT SIDE MENU
 
-  //     .right-section {
-  //       justify-content: stretch;
-  //     }
-
-  //     @media screen and (min-width: 1050px) {
-  //       margin: 0 16px 0;
-  //     }
-  //   }
-
-  // SIDE MENU
   .left-side__section {
     background-color: $background-main-menu-color;
     flex-direction: column;
@@ -177,6 +166,7 @@
   }
 
   // MAIN CENTRE AREA
+
   .main-area {
     padding: 25px 10px;
     background-color: $background-main-color;
@@ -200,6 +190,7 @@
   }
 
   // TOP MENU SECTION
+
   .main-nav__list {
     padding: 0 10px 22px;
     color: $top-menu-text-color;
@@ -311,6 +302,7 @@
   }
 
   // PRO GROWTH SECTION
+
   .objectives__section {
     .main-header-container {
       padding-bottom: 19px;
@@ -383,8 +375,9 @@
     }
   }
 
-  // GROWTH SECTION
-  .growth-section {
+  // METRICS SECTIONS
+
+  .metric-section {
     margin-bottom: 40px;
     min-width: 287px;
     background: #ffffff;
@@ -394,7 +387,7 @@
     margin-bottom: 16px;
     font-size: 14px;
 
-    .growth__header--container {
+    .metric__header--container {
       display: flex;
       justify-content: space-between;
       padding: 16px 0;
@@ -403,7 +396,7 @@
         padding: 16px;
       }
 
-      .growth__header--container--inner {
+      .metric__header--container--inner {
         display: flex;
         align-content: center;
 
@@ -442,7 +435,7 @@
           }
         }
 
-        .last-word-short {
+        .count-link {
           position: relative;
 
           &::before {
@@ -463,6 +456,26 @@
           @media screen and (min-width: 670px) {
             display: none;
           }
+        }
+      }
+
+      .count__link {
+        position: relative;
+
+        &::before {
+          content: '3';
+          position: absolute;
+          width: 22px;
+          height: 18px;
+          left: 150px;
+          top: 3px;
+          background: #ebeff5;
+          border-radius: 10px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          color: #455a64;
         }
       }
 
@@ -509,7 +522,7 @@
       }
     }
 
-    .growth-section--stats {
+    .metric-section--stats {
       display: none;
       margin-bottom: 45px;
       position: relative;
@@ -686,6 +699,8 @@
   // RIGHT SECTION
 
   .main-area-rightside-container {
+    flex-grow: 1;
+
     .right-section {
       justify-content: stretch;
     }
@@ -741,20 +756,28 @@
         margin-bottom: 40px;
 
         .ellipse-stats {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border: 20px solid $main-green-color;
           border-radius: 50%;
           box-sizing: border-box;
           width: 128px;
           height: 128px;
           // background-image: url(../images/good-ellipse-green-fill.svg);
-          background-size: cover;
+          //   background-size: cover;
           margin-bottom: 24px;
           box-shadow: 0px 4px 12px rgba(51, 184, 106, 0.4);
 
           &.bad-stats {
-            border: 20px solid #f5f7fa;
-            // background-image: url(../images/bad-ellipse-orange.svg);
-            // background-image: url(../images/bad-ellipse-orange-fill.svg);
+            border: 20px solid #23262a;
+            border: none;
+            box-shadow: 0px 4px 12px #fb7c3873;
+
+            background-image: url(../images/bad-ellipse-orange-merged.png);
+            background-repeat: no-repeat;
+            background-position: -12px 55px;
+            background-position: 0 0;
             background-size: cover;
           }
         }
@@ -838,6 +861,4 @@
       }
     }
   }
-
-  //
 }
