@@ -1,0 +1,45 @@
+$background-main-menu-color: #333940;
+$background-main-color: #f3f3f3;
+$background-comments-color: #f1fff785;
+$main-white-color: #ffffff6e;
+$top-menu-text-color: #18253a61; //объединить
+$input-text-color: #18253a99; //объединить
+$main-green-color: #219653;
+$secondary-green-color: #6cb61e;
+$access-section-text-color: #707a8a;
+$subscription-text-color: #434a54;
+$comments-text-color: #58606e;
+$main-font-stack: "Roboto", sans-serif;
+$main-font-size: 14px;
+
+// GENERAL RULES
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    color: $main-green-color;
+  }
+}
+
+ol,
+ul,
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: $main-font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $main-font-size;
+}
