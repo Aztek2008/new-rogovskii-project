@@ -749,6 +749,21 @@
         display: block;
         width: 100%;
         margin-bottom: 17px;
+        position: relative;
+
+        &::after {
+          content: '?';
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          background-color: #ebeff5;
+          border-radius: 50%;
+          right: 0px;
+          text-align: center;
+          color: #707a8a;
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
 
       .website-stats__card {
