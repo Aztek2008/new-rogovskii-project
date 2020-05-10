@@ -31,17 +31,17 @@
     }
   }
 
-  .main-area-rightside-container {
-    width: 100%;
+  //   .main-area-rightside-container {
+  //     width: 100%;
 
-    .right-section {
-      justify-content: stretch;
-    }
+  //     .right-section {
+  //       justify-content: stretch;
+  //     }
 
-    @media screen and (min-width: 1050px) {
-      margin: 0 16px 0;
-    }
-  }
+  //     @media screen and (min-width: 1050px) {
+  //       margin: 0 16px 0;
+  //     }
+  //   }
 
   // SIDE MENU
   .left-side__section {
@@ -686,6 +686,14 @@
   // RIGHT SECTION
 
   .main-area-rightside-container {
+    .right-section {
+      justify-content: stretch;
+    }
+
+    @media screen and (min-width: 1050px) {
+      margin: 0 16px 0;
+    }
+
     .gasket-box {
       display: none;
 
