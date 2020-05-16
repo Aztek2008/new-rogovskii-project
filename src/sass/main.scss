@@ -36,7 +36,7 @@
   // LEFT SIDE MENU
 
   .left-side__section {
-    background-color: $background-main-menu-color;
+    background-color: $background-left-menu-color;
     flex-direction: column;
     min-width: 72px;
     height: 100%;
@@ -160,7 +160,6 @@
         width: 64px;
         height: 40px;
         font-weight: 500;
-        font-size: 14px;
         line-height: 40px;
         letter-spacing: 0.1px;
         color: #f5f7fa;
@@ -171,55 +170,17 @@
     }
   }
 
-  ///// JS COLLAPSE CLASS
+  ///// JS COLLAPSE CLASS FOR LEFT MENU -- BEGIN
 
   .collapse {
-    background-color: $background-main-menu-color;
-    flex-direction: column;
     min-width: 72px;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
     transition: all 0.2s ease-out;
 
     .left-side__item {
-      width: 100%;
-      height: 48px;
       transition: fill 0.1s linear;
 
-      &:hover svg {
-        fill: $secondary-green-color;
-      }
-
-      &:hover {
-        background-color: #4cba3814;
-      }
-
-      &:nth-child(1) {
-        height: 65px;
-      }
-
-      &:last-child {
-        position: relative;
-        margin-top: 8px;
-        height: 65px;
-
-        &::before {
-          content: '';
-          position: absolute;
-          border-bottom: 1px solid $main-white-color;
-          opacity: 0.4;
-          width: 152px;
-          height: 0px;
-          left: 24px;
-        }
-      }
-
       & a {
-        height: 100%;
-        display: flex;
         justify-content: center;
-        align-items: center;
         padding: 0;
       }
     }
@@ -232,10 +193,8 @@
       position: relative;
 
       .list-link {
-        height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
         padding: 0;
       }
     }
@@ -254,7 +213,7 @@
     }
   }
 
-  ///// JS COLLAPSE CLASS
+  ///// JS COLLAPSE CLASS FOR LEFT MENU -- END
 
   // MAIN CENTRE AREA
 
@@ -281,21 +240,6 @@
       top: 700px;
       cursor: pointer;
     }
-
-    // &::before {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   width: 44px;
-    //   height: 44px;
-    //   background-image: url(../images/two-side-arrow.svg);
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   border-radius: 3.5px 0 0 3.5px;
-    //   background-color: inherit;
-    //   left: -44px;
-    //   top: 575px;
-    // }
   }
 
   // TOP MENU SECTION
@@ -347,7 +291,7 @@
           margin: 0;
           background-color: transparent;
           border: none;
-          color: #707a8a;
+          color: $paragraph-text-color;
 
           &:hover,
           &:focus {
@@ -539,7 +483,7 @@
               height: 18px;
               left: 95px;
               top: 3px;
-              background: #ebeff5;
+              background: $borders-circles-color;
               border-radius: 10px;
               font-weight: bold;
               font-size: 14px;
@@ -560,7 +504,7 @@
             height: 18px;
             left: 38px;
             top: 3px;
-            background: #ebeff5;
+            background: $borders-circles-color;
             border-radius: 10px;
             font-weight: bold;
             font-size: 14px;
@@ -584,7 +528,7 @@
           height: 18px;
           left: 150px;
           top: 3px;
-          background: #ebeff5;
+          background: $borders-circles-color;
           border-radius: 10px;
           font-weight: bold;
           font-size: 14px;
@@ -595,7 +539,6 @@
       }
 
       .view-all__link {
-        font-size: 14px;
         line-height: 24px;
         letter-spacing: 1.25px;
         text-transform: uppercase;
@@ -606,19 +549,18 @@
     &--container {
       padding: 24px 17px 27px 80px;
       margin-bottom: 16px;
-      border: 1px solid #ebeff5;
+      border: 1px solid $borders-circles-color;
       box-sizing: border-box;
       border-radius: 4px;
       overflow: hidden;
     }
 
     &--paragraph {
-      color: $access-section-text-color;
+      color: $paragraph-text-color;
       position: relative;
       font-weight: 500;
       line-height: 24px;
       letter-spacing: 0.1px;
-      color: #707a8a;
 
       &::before {
         content: '';
@@ -665,7 +607,7 @@
           > .stats-value {
             line-height: 24px;
             letter-spacing: 0.1px;
-            color: #707a8a;
+            color: $paragraph-text-color;
           }
 
           > .complete-bar {
@@ -685,7 +627,7 @@
         width: 205%;
         left: -15px;
         top: 65px;
-        border: 1px solid #ebeff5;
+        border: 1px solid $borders-circles-color;
         margin: 0px 16px;
       }
     }
@@ -721,7 +663,7 @@
           position: relative;
 
           & input:checked ~ .checkmark {
-            fill: #219653;
+            fill: $main-green-color;
           }
 
           .like-radio {
@@ -745,7 +687,7 @@
             cursor: pointer;
 
             &:hover svg {
-              fill: #219653;
+              fill: $main-green-color;
             }
 
             &.like {
@@ -785,7 +727,7 @@
       }
 
       &:hover {
-        color: #219653;
+        color: $main-green-color;
       }
     }
 
@@ -802,7 +744,7 @@
         border-radius: 4px;
         width: 116px;
         height: 32px;
-        background: #219653;
+        background: $main-green-color;
         color: #fff;
         margin: 0 auto;
         font-weight: 500;
@@ -819,7 +761,7 @@
           height: 0px;
           left: 130px;
           top: 16px;
-          border: 1px solid #ebeff5;
+          border: 1px solid $borders-circles-color;
         }
 
         &::before {
@@ -830,7 +772,7 @@
           height: 0px;
           left: -260px;
           top: 16px;
-          border: 1px solid #ebeff5;
+          border: 1px solid $borders-circles-color;
         }
       }
     }
@@ -896,11 +838,11 @@
           position: absolute;
           width: 18px;
           height: 18px;
-          background-color: #ebeff5;
+          background-color: $borders-circles-color;
           border-radius: 50%;
           right: 0px;
           text-align: center;
-          color: #707a8a;
+          color: $paragraph-text-color;
           font-size: 12px;
           line-height: 18px;
         }
@@ -937,11 +879,9 @@
 
         .ellipse-caption {
           margin: 0 auto;
-          font-weight: normal;
-          font-size: 14px;
           line-height: 20px;
           letter-spacing: 0.25px;
-          color: #707a8a;
+          color: $paragraph-text-color;
         }
       }
 
@@ -970,8 +910,6 @@
         }
 
         .right-section__paragraph {
-          font-weight: normal;
-          font-size: 14px;
           line-height: 20px;
           text-align: center;
           letter-spacing: 0.25px;
