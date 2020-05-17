@@ -246,6 +246,7 @@
           background-color: transparent;
           border: none;
           color: $paragraph-text-color;
+          outline: none;
 
           &:hover,
           &:focus {
@@ -898,8 +899,8 @@
           outline: none;
 
           &:hover,
-          &:checked {
-            border-color: $secondary-green-color;
+          &:focus {
+            border-color: $main-green-color;
           }
         }
 
