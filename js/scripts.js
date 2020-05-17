@@ -1,1 +1,1 @@
-"use strict";var strap=document.querySelector(".main-area__strap"),leftMenu=document.querySelector(".left-side__section");function collapseLeftMenu(e){leftMenu.classList.toggle("collapse")}console.log(strap),strap.addEventListener("click",collapseLeftMenu);
+"use strict";var strap=document.querySelector(".main-area__strap"),leftMenu=document.querySelector(".left-side__section");function collapseLeftMenu(e){"collapse-to-left"===leftMenu.dataset.id?leftMenu.dataset.id="":leftMenu.dataset.id="collapse-to-left"}console.log(strap),strap.addEventListener("click",collapseLeftMenu);
