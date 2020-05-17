@@ -172,7 +172,7 @@
 
   ///// JS COLLAPSE CLASS FOR LEFT MENU -- BEGIN
 
-  .collapse {
+  [data-id='collapse-to-left'] {
     min-width: 72px;
     transition: all 0.2s ease-out;
 
