@@ -5,9 +5,12 @@ console.log(strap);
 strap.addEventListener('click', collapseLeftMenu);
 
 function collapseLeftMenu(event) {
-  if (leftMenu.dataset.id === 'collapse-to-left') {
-    leftMenu.dataset.id = '';
-  } else {
-    leftMenu.dataset.id = 'collapse-to-left';
-  }
+  leftMenu.classList.toggle('collapse-menu')
 }
+// function collapseLeftMenu(event) {
+//   if (leftMenu.dataset.id === 'collapse-to-left') {
+//     leftMenu.dataset.id = '';
+//   } else {
+//     leftMenu.dataset.id = 'collapse-to-left';
+//   }
+// }

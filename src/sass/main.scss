@@ -935,51 +935,52 @@
       }
     }
   }
-}
 
-///// JS COLLAPSE CLASS FOR LEFT MENU -- BEGIN
+  ///// JS COLLAPSE CLASS FOR LEFT MENU -- BEGIN
 
-[data-id='collapse-to-left'] {
-  @media screen and (min-width: 670px) {
-    min-width: 72px;
-    transition: all 0.2s ease-out;
+  // [data-id='collapse-to-left'] {
+  .collapse-menu {
+    @media screen and (min-width: 670px) {
+      min-width: 72px;
+      transition: all 0.2s ease-out;
 
-    .left-side__item {
-      transition: fill 0.1s linear;
+      .left-side__item {
+        transition: fill 0.1s linear;
 
-      & a {
-        justify-content: center;
-        padding: 0;
+        & a {
+          justify-content: center;
+          padding: 0;
+        }
       }
-    }
 
-    .left-side__item--link {
-      height: 85px;
-      border-top: 0.5px solid $main-white-color;
-      border-bottom: 0.5px solid $main-white-color;
-      margin-bottom: 16px;
-      position: relative;
+      .left-side__item--link {
+        height: 85px;
+        border-top: 0.5px solid $main-white-color;
+        border-bottom: 0.5px solid $main-white-color;
+        margin-bottom: 16px;
+        position: relative;
 
-      .list-link {
-        display: flex;
-        justify-content: center;
-        padding: 0;
+        .list-link {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+        }
       }
-    }
 
-    .left-side__caption-item {
-      display: none;
-    }
+      .left-side__caption-item {
+        display: none;
+      }
 
-    .logo-img {
-      width: 32px;
-      height: 20px;
-    }
+      .logo-img {
+        width: 32px;
+        height: 20px;
+      }
 
-    .left-side__list--caption {
-      display: none;
+      .left-side__list--caption {
+        display: none;
+      }
     }
   }
-}
 
-///// JS COLLAPSE CLASS FOR LEFT MENU -- END
+  ///// JS COLLAPSE CLASS FOR LEFT MENU -- END
+}
